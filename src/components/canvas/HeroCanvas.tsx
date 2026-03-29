@@ -184,7 +184,7 @@ export function HeroCanvas() {
       const activeAttackers = attackers.filter(a => a.active).length;
       if (activeAttackers === 0) return;
       
-      const num = Math.min(activeAttackers, 3);
+      const num = Math.min(activeAttackers, 5);
       for(let i=0; i<num; i++) {
         const x = canvas.width * 0.3 + Math.random() * (canvas.width * 0.4);
         interceptors.push(new Drone(x, canvas.height + 50, 'INTERCEPTOR'));

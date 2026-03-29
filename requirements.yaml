@@ -1,0 +1,18 @@
+packages:
+  "framer-motion": "For smooth page transitions and scroll animations"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for merging tailwind classes safely"
+  "@radix-ui/react-slot": "For accessible component composition"
+  "lucide-react": "For UI icons"
+
+images:
+  - path: "artifacts/drone-system/public/images/radar-bg.png"
+    description: "Dark tactical radar screen background with faint cyan grid lines and glowing sweeping arm, minimalistic"
+    aspect_ratio: "16:9"
+  - path: "artifacts/drone-system/public/images/swarm-mesh.png"
+    description: "Abstract 3D network mesh representing drone swarm intelligence, glowing cyan and purple nodes on deep black background"
+    aspect_ratio: "16:9"
+
+notes:
+  - Expects backend API to follow REST conventions for drones (/api/drones) and telemetry (/api/telemetry).
+  - Missing APIs will fail gracefully in the UI with TanStack Query error boundaries/states.

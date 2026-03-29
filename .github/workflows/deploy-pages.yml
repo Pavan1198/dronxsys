@@ -34,7 +34,11 @@ jobs:
         env:
           GITHUB_PAGES: "true"
           GITHUB_REPOSITORY: ${{ github.repository }}
+          BASE_PATH: "/"
         run: npm run build
+
+      - name: Write custom domain
+        run: echo "drone.paverse.in" > dist/CNAME
 
       - name: SPA fallback
         run: cp dist/index.html dist/404.html

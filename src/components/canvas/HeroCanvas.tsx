@@ -228,7 +228,7 @@ export function HeroCanvas() {
         spawnAttackers();
         phase = 1;
         phaseTimer = 0;
-      } else if (phase === 1 && phaseTimer > 180) { // 3 seconds later
+      } else if (phase === 1 && phaseTimer > 90) { // 3 seconds later
         spawnInterceptors();
         phase = 2;
         phaseTimer = 0;
